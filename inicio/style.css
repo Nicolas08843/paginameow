@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #030303;
+}
+
+/* Estilos para el encabezado */
+header {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(0,90,108,1) 72%, rgba(0,0,0,1) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 200px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration:#08d0f4;
+    margin-left: 20px;
+    text-shadow: #08d0f4;
+}
+
+nav a:hover {
+    color: rgb(21, 194, 203); /* Color al pasar el mouse */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #fff;
+        margin: 0;
+    }
+
+    .logo-container img {
+        margin: 0 auto; /* Centrar logo en móviles */
+    }
+}
+
+/* Estilos para el video */
+.video-container {
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center; /* Centrar el video */
+    margin-bottom: 5px;
+}
+
+video {
+    width: 80%;
+}
+
+/* Estilos para las secciones */
+.categorias,
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #073d45;
+}
+
+.categoria,
+.proyecto {
+    margin-bottom: 20px;
+    width: calc(20% - 20px);
+}
+
+.categoria a,
+.proyecto a {
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    color: #fffcfc;
+    margin-top: 20px;
+}
+
+.categoria a:hover,
+.proyecto a:hover {
+    color: rgb(33, 146, 161); 
+    /* Color al pasar el mouse */
+    scale: 1.5;
+}
+
+.proyecto img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #073d45;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 20%;
+    padding: 0 20px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    color: #fef6f6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    text-decoration-color: #fff;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fafafa;
+    text-decoration: none;
+}
