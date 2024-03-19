@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="inicio/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="inicio/img/logo-final.png" alt="Logo" width="100">
+        </div>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+        <nav id="navMenu">
+            <a href="index.html">Inicio</a>
+            <a href="/asi soy/asisoy.html">Quién Soy</a>
+            <a href="/Tattoo/tattoo.html">Tattoo</a>
+            <a href="/blog/blog.html">Blog</a>
+            <a href="/contacto/contacto.html">Contacto</a>
+        </nav>
+    </header>
+    
+    
+    <!-- Contenido del sitio web -->
+    <div class="video-container">
+        <video src="inicio/video/proyecto spot 001.mp4" controls autoplay="img/logo-final.jpg"></video>
+    </div>
+
+    <section class="categorias">
+        <div class="categoria">
+            <a href="diseno-web.html">Making Of</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut nulla vel leo aliquam venenatis.</p>
+        </div>
+        <div class="categoria">
+            <a href="desarrollo-web.html">Otros Servicios</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut nulla vel leo aliquam venenatis.</p>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <div class="proyecto">
+            <img src="inicio/img/tattoo.jpg" alt="Tattoo">
+            <a href="/Tattoo/tattoo.html">Tattoo</a>
+        </div>
+        <div class="proyecto">
+            <img src="inicio/img/ilustracion.jpg" alt="Ilustración">
+            <a href="/ilustraciones/ilustracion.html">Ilustración</a>
+        </div>
+        <div class="proyecto">
+            <img src="inicio/img/foto.jpg" alt="Fotografía">
+            <a href="/fotografia/fotografia.html">Fotografía</a>
+        </div>
+        <div class="proyecto">
+            <img src="inicio/img/audiovisual.jpg" alt="Audiovisual">
+            <a href="audiovisual.html">Audiovisual</a>
+        </div>
+        <div class="proyecto">
+            <img src="inicio/img/web.jpg" alt="Diseño Web">
+            <a href="diseñoweb.html">Diseño Web</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Meow Tattoo Bogota</h3>
+                <p>        Ubicación :
+                     Cll 75 d # 73 h 32 sur 
+                        Barrio : Sta Viviana 
+                         Cr 24 b # 66-34 
+                       Barrio : 7 de Agosto 
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4>Colaboraciones </h4>
+                <ul>
+                    <li><a href="diseno-web.html">Cuervo rojo</a></li>
+                    <li><a href="desarrollo-web.html">Jey Records</a></li>
+                    <li><a href="desarrollo-apps.html">Retroibes</a></li>
+                    <li><a href="desarrollo-wordpress.html">Monkey Art</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Proyectos</h4>
+                <ul>
+                    <li><a href="proyecto-1.html">Spot Publicitario</a></li>
+                    <li><a href="proyecto-2.html">Iluminacion</a></li>
+                    <li><a href="proyecto-3.html">Muckups</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Redes Sociales</h4>
+                <div class="redes-sociales">
+                    
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://www.Whatsapp.com" target="_blank">Whatsapp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
