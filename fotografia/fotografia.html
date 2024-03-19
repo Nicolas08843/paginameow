@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotografia</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Otras etiquetas meta y enlaces -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Logotipo dentro de un contenedor para mejor control del tamaño -->
+        <div class="logo-container">
+            <img src="img/logo-final.png" alt="Logo" width="100">
+        </div>
+        <!-- Menú de navegación -->
+        <nav>
+            <a href="/inicio/index.html">Inicio</a>
+            <a href="/asi soy/asisoy.html">Quién Soy</a>
+            <a href="/Tattoo/tattoo.html">Tattoo</a>
+            <a href="#blog">Blog</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+    <h1>FOTOGRAFIA</h1>
+   
+    
+
+    <!-- Contenedor para el video para controlar el tamaño en dispositivos pequeños -->
+    <div class="glide">
+       
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                
+                <li class="glide__slide"><img src="img/1.jpg" alt="Imagen 1" width="360"></li>
+                <li class="glide__slide"><img src="img/2.jpg" alt="Imagen 2"width="360"></li>
+                <li class="glide__slide"><img src="img/3.jpg" alt="Imagen 3"width="360"></li>
+                <li class="glide__slide"><img src="img/4.jpg" alt="Imagen 4"width="360"></li>
+                <li class="glide__slide"><img src="img/5.jpg" alt="Imagen 5"width="360"></li>
+                <li class="glide__slide"><img src="img/6.jpg" alt="Imagen 6"width="360"></li>
+                <li class="glide__slide"><img src="img/7.jpg" alt="Imagen 7"width="360"></li>
+                <li class="glide__slide"><img src="img/8.jpg"alt="Imagen 8"width="360"></li>
+                <!-- Agrega más elementos <li> con tus imágenes -->
+            </ul>
+
+            
+
+            
+        </div>
+
+        
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+
+        <h2>VIDEOS
+
+        </h2>
+    </div>
+    <div class="video-container">
+        <video src="video/proyecto spot 001.mp4" controls poster="img/logo-final.jpg"></video>
+    </div>
+
+    
+
+    
+
+    
+    
+
+   
+
+
+    
+    <!-- Sección de categorías -->
+   
+    <!-- Sección de galería -->
+    <section class="galeria">
+        <div class="proyecto">
+            <img src="img/fpro.jpg" alt="tattoo">
+            <a href="tattoo.html">Fotografia Producto</a>
+        </div>
+        <div class="proyecto">
+            <img src="img/far.jpg" alt="ilustracion">
+            <a href="ilustracion.html">Fotografia artistica</a>
+        </div>
+        <div class="proyecto">
+            <img src="img/fpu.jpg" alt="fotografia">
+            <a href="fotografia.html">Fotografia públicitaria</a>
+        </div>
+        <div class="proyecto">
+            <img src="img/fur.jpg" alt="audiovisual">
+            <a href="audiovisual.html">Fotografia Urbana </a>
+        </div>
+        <div class="proyecto">
+            <img src="img/fpa.jpg" alt="diseño web">
+            <a href="diseñoweb.html">Fotografia Paisajes</a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Meow Tattoo Bogota</h3>
+                <p>Ubicación :
+                    Cll 75 d # 73 h 32 sur 
+                       Barrio : Sta Viviana 
+                        Cr 24 b # 66-34 
+                      Barrio : 7 de Agosto .</p>
+            </div>
+            <div class="footer-column">
+                <h4>Colaboraciones </h4>
+                <ul>
+                    <li><a href="diseno-web.html">Cuervo rojo</a></li>
+                    <li><a href="desarrollo-web.html">Jey Records</a></li>
+                    <li><a href="desarrollo-apps.html">vibes</a></li>
+                    <li><a href="desarrollo-wordpress.html">Monkey Art</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Proyectos</h4>
+                <ul>
+                    <li><a href="proyecto-1.html">Spot Publicitario</a></li>
+                    <li><a href="proyecto-2.html">Iluminacion</a></li>
+                    <li><a href="proyecto-3.html">Muckups</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Redes Sociales</h4>
+                <div class="redes-sociales">
+                    
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                    <a href="https://www.Whatsapp.com" target="_blank">Whatsapp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+     <script>
+         new Glide('.glide', {
+             type: 'carousel',
+             startAt: 0,
+             perView: 3, // Número de imágenes visibles a la vez
+             breakpoints: {
+                 768: {
+                     perView: 2 // Número de imágenes visibles a la vez en tablets
+                 },
+                 576: {
+                     perView: 1 // Número de imágenes visibles a la vez en dispositivos móviles
+                 }
+             }
+         }).mount();
+     </script>
+ 
+
+</body>
+
+</html>
